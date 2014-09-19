@@ -1,0 +1,16 @@
+<section id="pens" ng-controller="CodepenCtrl">
+  <h1 class="black">CodePen Collection</h1>
+
+  <article class="pen" ng-repeat="pen in pens">
+    <h4>
+      <a class="title" href="{{ pen.link }}" target="_blank">
+        {{ pen.title }}
+      </a>
+    </h4>
+    
+    <div>
+      <strong>Categories: </strong>
+      <span ng-repeat="cat in pen.categories">{{ cat }}{{$last ? '' : ' | '}}</span>
+    </div>
+  </article>
+</section>

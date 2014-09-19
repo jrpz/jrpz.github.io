@@ -1,0 +1,20 @@
+<section id="projects" ng-controller="ProjectsCtrl">
+  <h1 class="aqua">Projects</h1>
+  <p>
+    A collection of recent projects I've worked on with Barrel Roll Creative.
+  </p>
+
+  <article class="project" ng-repeat="project in projects">
+    <h4>
+      <a class="title external" href="{{ project.url }}" target="_blank">
+        {{ project.name }}
+      </a>
+    </h4>
+  
+    <p>
+      {{ project.description }}
+      <br />
+      Built with: <span ng-repeat="tool in project.tools">{{ tool }}{{$last ? '' : ' | '}}</span>
+    </p>
+  </article>
+</section>

@@ -1,0 +1,161 @@
+// bower:scss
+// endbower
+@import '../../bower_components/colors/sass/colors';
+
+
+// Vars
+// --------------------------
+$mono: 'Inconsolata', monospace;
+$sans: 'Montserrat', sans-serif;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $mono;
+  color: #444;
+  font-size: 1.2em;
+}
+
+// Typography
+// -------------------------
+h1,h2,h3,h4 {
+  font-family: $sans;
+}
+h1 { @extend .navy; }
+h2 { @extend .red; }
+h3 { @extend .blue; }
+h4 { @extend .red; }
+
+// Links
+// -------------------------
+a {
+  transition: all .3s ease-in-out;
+  text-decoration: none;
+}
+
+a:link    { color: $blue; }
+a:visited { color: $blue; }
+a:hover   { color: $teal; }
+a:active  { color: $orange; }
+
+// Aside
+// --------------------------
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  min-height: 500px;
+  background-color: #fafafa;
+  width: 245px;
+  padding: 5px 25px;
+  border-right: 1px solid $white;
+  box-shadow: 1px 0 0 $silver;
+}
+
+// Aside Header
+aside header {
+  h1 a:link, h1 a:visited {
+    color: $red;
+    font-size: 2em;
+    margin: 0 auto 25px;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: .85em;
+  }
+}
+
+// Aside Navigation
+aside nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 8px auto;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// Aside Footer
+aside footer {
+  position: absolute;
+  font-size: .8em;
+  bottom: 2px;
+}
+
+
+// Main Content
+// ----------------------------------
+main {
+  position: relative;
+  margin: 0 0 0 245px;
+  padding: 10px 45px;
+}
+
+main section {
+  margin-bottom: 75px;
+  h1 {
+    font-size: 5em;
+    margin: 10px auto;
+  }
+}
+
+main section article {
+  margin-bottom: 35px;
+  h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    span {
+      font-weight: normal;
+      font-size: .75em;
+      a:link, a:visited { 
+        color: $red; 
+        &:hover {
+          color: $teal;
+        }
+      }
+    }  
+  }
+
+  a.title {
+    &:after {
+      content: '\21fe';
+    }
+
+    &:hover { 
+      &:after {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+// Mobilize
+@media all and (max-width: 640px) {
+  aside {
+    position: relative;
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid $silver;
+  }
+
+  main {
+    margin: 0px;
+    padding: 5px;
+  }
+}
