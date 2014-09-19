@@ -1,4 +1,4 @@
-./_angular/node_modules
-./_angular/.tmp
-./_angular/.sass-cache
-./_angular/bower_components
+_angular/node_modules
+_angular/.tmp
+_angular/.sass-cache
+_angular/bower_components

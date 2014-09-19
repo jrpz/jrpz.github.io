@@ -1,0 +1,57 @@
+[
+  {
+    "name": "PCS Grades",
+    "type": "website",
+    "description": "PCS Grades is like Angie's List for military. Built the landing page.",
+    "tools": ["SASS", "Zurb", "Foundation"],
+    "url": "http://pcsgrades.com/"
+  },
+
+  {
+    "name": "Rackstories",
+    "type": "website",
+    "description": "A custom Wordpress theme built for Rackspace's Client Relations team.",
+    "tools": ["LESS", "jQuery", "Twitter Bootstrap"],
+    "url": "http://stories.rackspace.com/"
+  },
+
+  {
+    "name": "SavingFace Skin Therapy",
+    "type": "website",
+    "description": "Brochure site built using Squarespace's developer platform.",
+    "tools": ["LESS", "YUI"],
+    "url": "http://www.savingfaceskintherapy.com/"
+  },
+
+  {
+    "name": "Second Opinion Specialists",
+    "type": "website",
+    "description": "Custom Wordpress theme for a virtual radiology network.",
+    "tools": ["LESS", "jQuery", "Twitter Bootstrap"],
+    "url": "http://sospecialists.com"
+  },
+
+  {
+    "name": "Geekdom",
+    "type": "website",
+    "description": "Expression Engine site for a San Antonio and San Francisco based collaborative workspace.",
+    "tools": ["LESS", "jQuery", "Twitter Bootstrap"],
+    "url": "http://geekdom.com/"
+  },
+
+  {
+    "name": "AACT Now Voter Lookup",
+    "type": "web app",
+    "description": "Web app that allows Rio Grande Valley voters to lookup their voter information and voting locations.",
+    "tools": ["Django", "Twitter Bootstrap"],
+    "url": "http://voterlookup.aactnow.org/"
+  },
+
+  {
+    "name": "Cellular One Rewards",
+    "type": "mobile",
+    "description": "Customer Android and iOS app to view bill, usage, etc.",
+    "tools": ["Phonegap", "Knockout JS", "DevExpress"],
+    "url": "https://play.google.com/store/apps/details?id=com.c1.central"
+  }
+]
