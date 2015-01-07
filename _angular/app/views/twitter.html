@@ -1,7 +1,9 @@
 <section id="twitter">
   <h1 class="olive">Twitter</h1>
 
-  <p>This is the twitter view... to be completed.</p>
+  <p>Latest tweets...</p>
 
-  <a href="http://twitter.com/jrpz" target="_blank">Twitter Page</a>
+  <article class="tweet" ng-repeat="tweet in tweets">
+    <p>{{ tweet.text }}</p>
+  </article>
 </section>

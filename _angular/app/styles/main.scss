@@ -119,13 +119,13 @@ main section article {
     span {
       font-weight: normal;
       font-size: .75em;
-      a:link, a:visited { 
-        color: $red; 
+      a:link, a:visited {
+        color: $red;
         &:hover {
           color: $teal;
         }
       }
-    }  
+    }
   }
 
   a.title {
@@ -133,7 +133,7 @@ main section article {
       content: '\21fe';
     }
 
-    &:hover { 
+    &:hover {
       &:after {
         margin-left: 5px;
       }
@@ -142,6 +142,30 @@ main section article {
 
   p {
     margin-top: 10px;
+  }
+}
+
+// Instagram Grid
+.instagrams {
+  display: flex;
+  flex-flow: row wrap;
+
+  .instagram {
+    position: relative;
+    width: 306;
+    margin: 2px 5px;
+
+    span {
+
+      position: absolute;
+      width: 100%;
+      display: block;
+      color: $white;
+      background-color: rgba(0,0,0,.65);
+      padding: 4px 2px;
+      font-size: 12px;
+      bottom: 4px;
+    }
   }
 }
 

@@ -9,12 +9,12 @@
  */
 angular.module('jrpzApp')
   .factory('instagramFactory', function ($http) {
-    var instagramUrlBase = '';
+    var instagramUrl = 'http://jrpz-server.herokuapp.com/instagram';
 
     // Public API here
     return {
-      getInstagrams: function (callback) {
-        $http.jsonp(instagramUrl)
+      getImages: function (callback) {
+        $http.get(instagramUrl)
           .success(function (response) {
             callback(response);
           })

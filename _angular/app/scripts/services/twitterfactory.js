@@ -8,16 +8,20 @@
  * Factory in the jrpzApp.
  */
 angular.module('jrpzApp')
-  .factory('twitterFactory', function () {
+  .factory('twitterFactory', function ($http) {
     // Service logic
-    // ...
-
-    var meaningOfLife = 42;
-
+    var twitterFeed = 'http://jrpz-server.herokuapp.com/twitter'
     // Public API here
     return {
-      someMethod: function () {
-        return meaningOfLife;
+      getTweets: function (callback) {
+        $http.get(twitterFeed)
+          .success(function (response) {
+            callback(response);
+          })
+          .error(function (err) {
+            console.log(err);
+            callback(err);
+          })
       }
     };
   });
